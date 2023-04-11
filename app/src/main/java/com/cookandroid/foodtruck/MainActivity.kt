@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val numOfRows = "&numOfRows=5"
         // 문서타입
         val type = "&type=xml"
-
+        // url
         val url = "http://api.data.go.kr/openapi/tn_pubr_public_food_truck_permit_area_api?serviceKey=" + key + pageNo + numOfRows + type
 
 
