@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_list"
+            android:icon="@drawable/star_1"
+            android:title="즐겨찾기 목록" />
+    </group>
+
+    <group
+        android:id="@+id/menu2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_marker"
+            android:icon="@drawable/location_1"
+            android:title="지역별 목록" />
+    </group>
+    
+    <group
+        android:id="@+id/menu4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_notice"
+            android:icon="@drawable/post"
+            android:title="공지사항" />
+    </group>
+
+    <group
+        android:id="@+id/menu5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_service"
+            android:icon="@drawable/call"
+            android:title="고객센터" />
+    </group>
+
+</menu>

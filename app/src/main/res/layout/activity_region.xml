@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#660099">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/list"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "지역별 목록"
+            android:textStyle="italic"
+            android:textSize="50dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/regionView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/edge">
+
+    </ListView>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/seoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시"/>
+
+                <RadioButton
+                    android:id="@+id/incheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인천광역시" />
+
+                <RadioButton
+                    android:id="@+id/gyeonggi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="경기도" />
+
+                <RadioButton
+                    android:id="@+id/gangwon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="강원도" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/daejeon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대전광역시" />
+
+                <RadioButton
+                    android:id="@+id/daegu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대구광역시" />
+
+                <RadioButton
+                    android:id="@+id/chungcheon_north"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="충청북도" />
+
+                <RadioButton
+                    android:id="@+id/chungcheon_south"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="충청남도" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiogroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gwangju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="광주광역시" />
+
+                <RadioButton
+                    android:id="@+id/ulsan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="울산광역시" />
+
+                <RadioButton
+                    android:id="@+id/jella_north"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="전라북도" />
+
+                <RadioButton
+                    android:id="@+id/jella_south"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전라남도"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiogroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/busan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부산광역시" />
+
+                <RadioButton
+                    android:id="@+id/jeju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제주특별자치도" />
+
+
+                <RadioButton
+                    android:id="@+id/gyeongsang_north"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경상북도" />
+
+                <RadioButton
+                    android:id="@+id/gyeongsang_south"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경상남도" />
+        </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#330033"
+            android:text="초기화"/>
+
+        <Button
+            android:id="@+id/showmarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#330033"
+            android:text="마커 표시"/>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#330033"
+            android:text="닫기"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Food Truck</string>
+    <string name="app_name">전국 푸드트럭</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

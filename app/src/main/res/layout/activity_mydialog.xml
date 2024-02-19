@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:src="@drawable/foodtruck"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/truck"/>
+
+    <HorizontalScrollView
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:layout_height="500dp">
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/edge">
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="118dp"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="허가구역명"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="200dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/zone"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="소재지도로명주소"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/roadAddr"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="소재지지번주소"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/streetNumAddr"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="허가구역사용료"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/rntFree"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="푸드트럭운영대수"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/vhcleCo"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="허가구역운영시작일자"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/beginDate"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="허가구역운영종료일자"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/endDate"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="허가구역휴무일"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/rstde"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:background="@drawable/edge_bottom">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="판매제한품목"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/lmttPrdlst"
+                       android:gravity="center"/>
+               </TableRow>
+
+               <TableRow
+                   android:layout_weight="1"
+                   android:gravity="center">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="49dp"
+                       android:layout_weight="1"
+                       android:text="관리기관명"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:layout_marginRight="0dp"
+                       android:background="@drawable/edge_right"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="내용"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/institutionNm"
+                       android:gravity="center"/>
+               </TableRow>
+
+           </TableLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="즐겨찾기"
+            android:id="@+id/find_button"
+            android:layout_marginRight="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+            android:id="@+id/cancel_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
